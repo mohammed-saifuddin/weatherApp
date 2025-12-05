@@ -3,4 +3,4 @@ workdir /app
 copy . .
 run npm install
 expose 3000
-CMD["npm","start"]
+CMD ["npm","start"]
