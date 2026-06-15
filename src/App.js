@@ -125,7 +125,10 @@ function App() {
             }}>
 
 
-              {isLoading ? <img src='https://tse2.mm.bing.net/th?id=OIP.AsvHGFjVFujvuXPOk-3cPgHaHa&pid=Api&P=0&h=180' /> : ""}
+              {isLoading ? <img
+  src='https://tse2.mm.bing.net/th?id=OIP.AsvHGFjVFujvuXPOk-3cPgHaHa&pid=Api&P=0&h=180'
+  alt='loading'
+/> : ""}
 
 
 
@@ -139,7 +142,11 @@ function App() {
                 fontWeight: 'bold',
                 fontSize: '32px'
               }}>{wdetails.main.temp} oC</Typography>
-              <img className="img" src={`http://openweathermap.org/img/w/${wdetails.weather[0].icon}.png`} />
+              <img
+  className="img"
+  src={`https://openweathermap.org/img/w/${wdetails.weather[0].icon}.png`}
+  alt="weather icon"
+/> />
               <Typography sx={{
                 display:'flex',
                 fontSize:'20px',
