@@ -17,10 +17,10 @@ function App() {
   let getData = () => {
     console.log(city);
     setIsloading(true)
-    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=0fcbd0db56032b6a4d3a3896c85a27d8&units=metric`).
-      then((res) => res.json()).
-      then((finalRes) => {
-        if (finalRes.cod == "404") {
+   fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=API_KEY&units=metric`)
+  .then((res) => res.json())
+  .then((finalRes) => {
+        if (finalRes.cod === "404") {
           setWdetails(undefined);
         }
         else {
