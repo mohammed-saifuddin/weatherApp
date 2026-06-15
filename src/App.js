@@ -105,7 +105,7 @@ function App() {
       }}>
 
         {
-          wdetails != undefined
+          wdetails !== undefined
             ?
             <Grid sx={{
               display: 'flex',
