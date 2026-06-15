@@ -1,6 +1,6 @@
 {
   "name": "myweather",
-  "homepage": "http://mohammed-saifuddin.github.io/weatherApp",
+  
   "version": "0.1.0",
   "private": true,
   "dependencies": {
